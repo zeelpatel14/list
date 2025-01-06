@@ -1,0 +1,205 @@
+Python Control Structures
+------------------------------------
+In any programming language or in python the definetion of control structure is to control the flow of instructions based on certain conditions.
+
+
+Python Control Structures are broadly classified into following:
+	a) Conditional Control Structure
+	b) Iterative Control Structure
+
+Conditional Control Structure
+----------------------------------------
+In conditional control structure the instructions are executed based certain conditions.
+
+To execute the instructions based on conditions we use if statement
+
+syntax of if statement:
+-----------------------------
+if(condition):
+   statement1
+   statement2
+
+statement3
+
+Example to understand use of if condition to validate the score
+------------------------------------------------------------------------------------
+#if condition demo
+score=int(input("enter Score "))
+if score>=35:
+    print("Score is %d  so passed "%score)
+
+In python we can also give else statement
+=================================
+syntax:
+	if (condition):
+	    statement1
+	    statement2
+	else:
+	    statement3
+
+#code to understand the if and else statements
+score=int(input("enter Score "))
+
+if score>=35:
+    print("Score is %d so Passed "%score)
+else:
+    print("Score is %d so Failed "%score)
+
+Ternary expression to check username and password
+---------------------------------------------------------------------------
+#to check username and password using ternary expressions
+
+username=input("enter user name ")
+password=int(input("enter password "))
+
+print("Logged in Successfully ") if(username=='admin' and password==12345) else print("Invalid username or password given ")
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Nested if statements
+---------------------------
+We can give if condition within the if conditions which is known as "nested if " statements
+
+syntax:
+	if(condition):			#outer if 
+	    statement1
+	    if(condition2):			#inner if
+	      statement2
+	    else:
+	      statement3
+	else:
+	     statement4
+
+First validate username then ask for password
+===================================
+solution
+----------
+#nested if statement demo
+username=input("enter user name ")
+if username=='admin':
+    password=int(input("enter password "))
+    if(password==12345):
+        print("Loggin %s Successfull "%username)
+    else:
+        print("Wrong Password given ")
+else:
+    print("Invalid User")
+
+In the above example inner if else is executed after the outer if condition is true
+
+
+
+In python programming we can also give multiple conditions with if....elif......elif.....elif.....else
+------------------------------------------------------------------------------------------------------------------------------
+syntax:
+	if(condition):
+	   statement1
+	   statement2
+	   statement3
+	elif(condition2):
+	   statement4
+	   statement5
+	elif(condition3):
+	   statement6
+	else:
+	   statement7
+elif normally acts like connection if conditions
+
+Example:
+------------
+#program to check or value User Age
+age=int(input("Enter Age "))
+
+if age>=1 and age<18:
+    print("Age is %d  so you are Minor "%age)
+    print("Not eligible for Voting or Driving etc.,")
+elif(age>=18 and age<56):
+    print("Age is %d so you are Major  "%age)
+elif(age>=56 and age<100):
+    print("Age is %d so you are Senior Citizen  "%age)
+else:
+    print("Age is  Invalid %d "%age)
+    
+In the above we have learn how to use the elif statements.
+
+
+
+Lab Work :
+----------------------------------------------------
+1. 
+Write a program to accept input score as integer 
+check the conditions score>=0 and score<35 print failed
+score>=35 and score<60 print passed with B grade
+score>=60 and score<75 print passed with A grade
+score>=75 and score<=100 print passed with Distinction
+
+Solve using if...elif
+
+2. 
+Write a program to accept input for x,y,z variables values as integers and then find the biggest number.
+solve using if..elif   
+------------------------------------------------------
+
+Loops
+====
+Looping means iteration, iteration means repeating certain statements or instructions again and again
+There are following types of loops:
+	a) for loop
+	b) while loop
+
+for loop in python is an simple loop which is used to pick a single value from the collections of values
+syntax:
+	for data in collections
+
+here,for and in are python keywords
+
+Example:
+--------------
+#for loop example
+for i in 'Monica','Nancy','Shiva':
+    print("welcome ",i)
+    #print(i)
+    
+#we can use for loop with  numbers
+for i in 1,2,3,4:
+    print("Hello ",i)
+
+In the above example we printing the message repeatedly based on "in" keyword values of for loop.
+
+python range
+==========
+In python range() is an built in functions
+syntax:
+	range(startvalue,stopvalue,stepvalue)
+
+by default stepvalue is 1.
+
+example: range()
+================
+#range() demo
+for i in range(1,11):
+    print(i)
+
+#range() demo with step value
+for i in range(1,11,2):
+    print(i)
+
+Lab work
+-------------
+Write a python script to print the number from 
+10
+9
+8
+..
+1
+
+Write a program to accept a number as input then print its; maths table
+example:
+	input=5
+	5x1=5
+	5x2=10
+	5x3=15
+	.........
+	.........
+	........
+	5x10=50

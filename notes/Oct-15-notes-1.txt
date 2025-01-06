@@ -1,0 +1,138 @@
+Introduction to python
+------------------------------
+Python Introductions
+=================
+Python 
+======
+>> What Is Python ?
+	Python is a programming language that is Interpreted, Object Oriented, and considered to be High-level too.
+
+Python is one of the easiest yet most useful programming languages   
+
+Python is a Open Source High level object oriented programming language.
+
+Python is as known as the GPL (General Purpose programming Language)
+
+Python is mainly used to develop the following different types of applications:
+	a) Windows APP  (python + Tkinter packages)
+
+	b) Web App Develop (Django + Flask)
+
+	c) Data Scientist + Data Analyst (Pandas,numpy,seaborn,scipy, sklearn,matplotlib)
+
+	d) Network Tool Automation Developer (Netmiko, Paramiko, Socket)
+	
+	e) Testing Tool Automation Developer (Selinium) (Web testing) It's as script in Mobile testing also.
+
+	f)  AI Tools developer (NLP)
+
+
+Python Language Features
+========================
+Python is simple and easy to learn programming language.
+
+Python supports many built in keywords (keywords which are also known as reserved words)
+
+Python also supports many libraries and modules built in (packages).
+
+Python is OS independent.  You can install python in Windows, Linux , Mac.
+
+Python is an OSS (Open Source Software), it means we can download and install python freely along with the source code of the language libraries.
+
+Python when compared to java it is 10+ times faster, for example:
+
+	.java			                .py
+
+	 |				|
+	javac			         interpretor
+	 |				|
+	.class			            output
+	|
+	jvm
+	|
+	ouput
+
+Python can be downloaded from the python.org web site
+
+Python Was invented By a Person called Guido Van Rossum in the 1994-95.(14)
+
+There are many versions of python available like: 2008  -2022  (14)
+
+	python 2.7...2.8..3.0......3.1,,,,,,,3.2,3.3,3.4,3.5,3.6,3.7,3.8,3.9,,,,,,,,,,,,,,,,,,,,,,,,,3.10,3.10.1, 3.10.2,  3.10.3, 3.10.4................
+
+python 3.12.5 latest
+
+
+Once we download and install python following tools are also installed
+
+	a) Python Shell		: Python Shell is just a shell prompt which is used to give single line instructions at a time
+
+	b) Python IDLE		: Python IDLE which is mainly used to give and develop python scripts
+
+	c) Python Help Docs
+
+	d) Python Interpretor		: It is used to convert the python instructions into machine level code.
+
+>>> print("Welcome to Python coding")
+Welcome to Python coding
+>>> print(120+44)
+164
+>>> print(10/3)
+3.3333333333333335
+>>>
+
+
+Python IDLE
+===========
+It is known as Integrated Developement Env.
+
+IDLE is mainly used by the python developer, to develop the python programs.
+
+A program always contains 3 components:
+	a) INPUT
+	b) LOGIC
+	c) OUTPUT
+
+python simple to and execute using IDLE
+
+Apart from built in IDLE we also can devlelop the python script by using the following different editors like:
+	a) pycharm	(comminuty or professional)
+
+	b) Jupyter
+
+	c) Spyder
+
+	d) Visual source Code
+Python is mainly Object Oriented and high level programming language.
+
+Python Features
+==============
+1) Python is simple and easy to learn
+2) Python provides rich set built in libraries as packages.
+3) Python also comes with many keywords.
+4) Python is also an OS independent 
+5) Python is faster in executions compared to other programming languages
+
+Exampe:
+	.java			.py
+	  |			 |
+	 javac			interpretor
+	  |			 |
+	.class			machine/op
+	  |
+	jvm
+	 |
+	machine/op
+
+In todays current scenario python programs run 10+ times faster than other language programs.
+
+Programming means grouping set of different instructions together, for performing some particular tasks.
+
+To give or code the python instructions we need an IDE(Integrated Development Env), some of the other important
+IDE's are:
+	a) pycharm (community, professional)
+	b) jupyter
+	c) Spyder
+
+Python IDLE to write and execute the programs
+-----------------------------------------------------------------

@@ -1,0 +1,163 @@
+Python Iterations 
+-----------------------
+for loop example
+-----------------------
+Lab work discussions
+------------------------------
+Q1. To print the numbers in reverse from 10 to 1.
+======================================
+example:
+-----------
+#for loop demo
+for i in range(10,0,-1):
+    print(i)
+
+Q2. To print the maths table for example input num=5
+output
+----------
+5x1=5
+.....
+5x10=50
+
+solutions
+------------
+#program to print maths tables
+input1=int(input("enter a number "))
+
+for i in range(1,11):
+    print("%d X %d = %d "%(input1,i,input1*i))
+
+
+for i in 1,2,3,4,5,6,7,8,9,10:
+    print("%d X %d = %d "%(input1,i,input1*i))
+
+We can also apply for loop on string datas
+===================================
+A string is collections of characters(alpha numeric characters)
+forexample s1='sachin'
+	 s2='e0001'
+	
+#for on string variable
+string1=input("enter a String ")
+
+count=0
+for ch in string1:
+    print(ch)
+    count=count+1
+
+print("%s string length is %d "%(string1,count))
+
+Lab -  Work
+------------------
+Write a python script to accept a string as input then count number of vowel characters:
+for example:	
+	input:		Jaysurysinh
+	logic:		check each character a vowel character or not,then increment counter
+	
+output:		
+a is vowel
+u is vowel
+i is vowel
+3 vowels found
+
+Nested For loops
+==============
+In python we can design a for loop within a another for loop, which is also known as nested for loops.
+The main use of nested for loop to print the datas in matrix formats.
+
+syntax:
+	for data1 in collection1:		#outer for loop
+	    for data2 in collection2:   	#inner for loop
+	         print(data1,data2)
+	    print()
+
+=============================
+
+The outer for loop repeates once for every inner for loop completions.
+
+For example:
+==========
+#nested for loop
+for i in range(1,3):                        #outer 1 to 2 repeats 2 times  rows
+    for j in range(1,4):                    #outer 1 to 4 repeats 3 times columns
+        print(j,end="\t")
+    print()
+        
+
+Lab-work
+========
+Develop a python to accepts a number value as row then print the following patterns
+for example:
+	inputrows	: 3
+	output:
+		*
+		* *
+		* * *
+	inputrows	:5
+	output:
+		*
+		*  *
+		*  *  *
+		*  *  *  *
+		*  *  *  *  *
+
+
+================================
+
+
+while loop
+------------
+In python programming while loop is known as "entry" controlled loops, it means it will execute the statements only when the while loop conditions is true.
+syntax:
+	initialvalue
+	while(condition):
+	     statement1
+	     statement2
+	     increment/decrement values
+
+for example python script to print numbers from 1 to 10 and also calculate the sum from 1 to 10
+1+2+3+4+5+6+7+8+9+10	= 55
+
+#print and calculate sum from 1 to 10    
+counter=1      #initial value
+total=0
+while counter<=10:   #condition
+    print(counter)
+    total=total+counter
+    counter=counter+1 #increment
+
+print("total is ",total)   
+
+Lab Work :
+
+Write a python script to find a factorial of a number 
+	inputnumber: 5
+	logic:
+		5x4x3x2x1
+	output:
+		120
+Solve using while loop
+
+
+
+Write a python script to accept a number as input then print it in reverse order.
+	inputnumber: 12345
+	
+	Logic:
+		1234               123             12           1
+		  _______	  _________       ________        ______        
+		10|12345	10|1234		10|123		10|12 
+		  -12340	  -1230		  -120		  -10   
+		-----------	---------        -------	 -----------       -----------
+		 5		4 		 3		   2                     1
+
+	
+
+		-------------
+
+	output:	54321
+
+
+
+
+ 

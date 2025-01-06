@@ -1,0 +1,327 @@
+Python Variables and DataTypes
+---------------------------------------------
+A variable in python programming is an identifier or a label given by us to store some values.
+
+With in the variables we can store different types of datas.
+
+The different types of datas is known as "data types"
+
+In programming we can store different type of data based the data types.
+Some of the data types are:
+	a) Integer (1000)
+	b) Float     (10.230)
+	c) String   (text)
+	d) Boolean (True or False)
+
+The above mentioned types are the most basic and fundamental data types.
+
+Python programming is dynamic type driven language and also it's known as loosely typed language.  
+It means we do not define the variable type before itself, it is acutally defined during the code executions process.
+
+		For example:				Description
+		-----------------				----------------
+		x = 10					 integer data type		
+
+		x=10.45					float data type
+
+		x="Sachin1234", 'Sachin' 		string data type
+
+		x = True Or False 			boolean data type
+
+Example:
+-----------
+#python script to define variable with values
+idno=100
+name='sachin'
+score=90.66
+address="#91 kalyanagar hrbr layout bangalore"
+print("Idno ",idno)
+print("Name ",name)
+print("Score ",score)
+print("Address ",address)
+
+note: In the above example we have created 4 variable of different data types with different variable names.
+
+A variable name must be given based on the naming rules:
+	a) A variable name can not be started with number
+		eg:	1x   this is wrong
+			 x1  this is right
+	b) A variable name can not be started with special symbols like:
+		eg:	$x  this is wrong
+			#x  this is wrong
+	c) A variable name can not be a python keyword
+		eg:
+			if, for , while  don't use this as variable names
+	d) A variable name must not also have space in between
+		eg:
+			first name  this is wrong
+			firstname   this is right
+	e) A variable name is also a case sencitive there is difference between upper case and lower case variables
+		eg:
+			X=5
+			x=10
+
+In python every variable is known as object and they belong to some particular class.
+
+Example:
+------------
+In python we can use type() built in function to find the variable data types.
+#variable type
+
+x=100
+print(" x type ",type(x))
+x=10.34
+print("x type ",type(x))
+x='sachin12345'
+print("x type ",type(x))
+
+output
+--------
+ x type  <class 'int'>
+x type  <class 'float'>
+x type  <class 'str'>
+>>> 
+
+We can also print the variables of different data types with different type specifiers also
+-----------------------------------------------------------------------------------------------------------------------
+type			type specifier		description
+------			-----------------		---------------
+integer			%d			to store integer values
+float			%f			to store float datas
+string			%s			to store the string datas
+
+for example:
+-----------------
+#variable type
+
+x=100
+print("%d x is "%x)
+x=10.34
+print("%f x is  "%x)
+x='sachin12345'
+print("%s x is  "%x)
+
+output
+--------
+100 x is 
+10.340000 x is  
+sachin12345 x is  
+>>> 
+
+#variable type
+
+#variable type
+
+x=100
+print("%d x is "%x)
+x=10.34
+print("%f x is  "%x)
+x='sachin12345'
+print("%s x is  "%x)
+x=False
+print("%s x is " %x)
+#converting the boolean into int
+print("%d x is "%int(x))      #False will be 0
+x=True
+print("%d x is "%int(x))        #True will be 1
+
+
+boolean type variables values can be printed by using %s or by also using %d  , when printed with %d it will show 0 for false and 1 for true
+
+Python to read input from user
+=========================
+In python language we can read data as input from user by using input() builtin functions.
+Example:
+========
+#variable input demo
+
+name='jaysurysinh' #constant data
+name=input("enter name :") #dynamic data
+print(name)
+
+In the above example we are using just input function to read inputs from the user.
+
+We can also read inputs as string and then concate them
+============================================
+
+#program to merge fname with lname
+fname=input("enter first name ")
+lname=input("enter last name ")
+print("Full Name : ",fname+" "+lname)
+
+We can also  convert the input into a int or float type, because by default the data input we read it in string formats.
+#program to merge fname with lname
+n1=int(input("enter n1 value ")) #string converted into int
+print(n1+10)
+
+To convert the input into integer we use int() built in functions, same way we float() built in function to convert input into a float.
+
+Python Operators
+==============
+Operators are those which perform some operations on the input datas(operands)
+
+Operators can be :
+	a) Unary operator
+	b) Binary operator
+
+Unary operators are those which take only one operand(data) as input.
+	eg: -12
+
+Binary operators are those which take two operands(datas) as input
+	eg: 120 + 340
+
+Type of operators
+-----------------------
+Arithmatic operators
+Relational operators
+Logical operators
+Assignment operators
+Ternary expression (operators)
+
+Aritmatic operators
+=================
++	-	/	*	%	//   **
+
+example:
+		2)7(3
+		   6
+		---------
+		  1
+quotien=7/2
+
+remainder=7%2
+
+Example for arithmatic operators
+========================
+#python arithmatic operators
+n1=float(input("enter n1 float value "))
+n2=float(input("enter n2 float value "))
+
+print("sum is ",n1+n2)
+print("diff is ",n1-n2)
+print("div is ",n1/n2)
+print("int value of div ",n1//n2)
+print("prod is ",n1*n2)
+print("rem is ",n1%n2)
+print("power is ",n1**n2)
+	
+
+Relational operators
+==================
+<	>	<=	>=	==	!=
+
+All the relational operators will give the boolean values as the output for example true or false.
+
+#python relational operators
+n1=100
+n2=50
+
+print("n1>n2 ",n1>n2)   #true
+print("n1<n2", n1<n2)   #false
+print("n1==n2", n1==n2)  #false
+print("n1!=n2",n1!=n2)  #true
+
+
+Logical operators
+===============
+AND		OR		NOT
+
+In python programming we use logical operators in small case like:
+	and
+	or
+	not
+
+
+Logical Operators
+==============
+AND , OR, NOT
+
+AND
+=====
+We give in python logical AND in small case as "and"
+
+	inputs:	
+		x=100	y=15	z=250
+
+	condition1		AND	condition2		result
+
+	x>y		,,		x>z		
+	T				F			F
+
+	y>x		,,		y>z		
+	F		,,		F			F
+
+	z>x		,,		z>y
+	T				T			T
+
+Example:
+========
+x=100
+y=15
+z=250
+print(x>y and x>z)
+print(y>x and y>z)
+print(z>x and z>y)
+
+In logical AND both the condition must be true in order to get the result as true.
+
+Logical OR
+=========
+In python programming we will be giving logical "OR" in smal case as "or".
+
+	input:
+		paymode='cash'
+
+	condition1		OR		condition2		result
+	=========				=========		=======
+	paymode=='online'     ,,			paymode=='DD'
+		F	,,			F			F
+	paymode=='Cheq'   	,,			paymode=='cash'
+		F				T			T
+	paymode=='cash'	,,			paymode='online'
+		T	,,			F			T
+
+Example:
+======
+paymode='cash'
+print(paymode=='online' or paymode=='dd')
+print(paymode=='cash' or paymode=='cheq')
+print(paymode=='online' or paymode=='cash')
+
+Logical NOT
+-----------------
+x=True
+
+NOT x   (False)
+
+In python we give the logical NOT as "not" in small case.
+
+Example:
+==========
+#not example
+n1=True
+print("n1 ",n1)
+print("not n1 ",not n1)
+
+Ternary Expressions
+=================
+Ternary expressions in python are the if...else statements given in a single line
+syntax:
+	value1  if (condition) else value2
+
+Example:
+==========
+Using ternary expression to find the given input number is a positive or negative number
+#check  number if -'ve or +'ve number
+n1=int(input("enter a number "))
+
+#check the condition
+print("positive number given ") if n1>0  else print("negative number given ")
+
+Lab work
+=======
+1. Write a python script to accept two float values as inputs and then find the smallest value, solve it using 
+ternary expressions.
+
+2. Write a python script to accept a number as integer value input, then find the number is an odd or even number
+solve it using ternary expressions.
